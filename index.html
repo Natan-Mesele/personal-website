@@ -3,23 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>personal website</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">product</a></li>
-                <li><a href="#">Pricing</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        
+            <a href="#" class="logo">Natty<span>Brand</span></a>
+
+            <nav>
+                <img src="img/exit.svg" alt="close navigation" class="close">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.svg" alt="Open navigation" class="menu">
+        </header>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">WELCOME TO MY WORLD</p>
+                <h1>Hi, I’m Natan Mesele</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Go To Portfolio</a>
+                </div>
+            </div>
+            <img src="img//na.jpg" alt="personal pic" class="hero-img">
+        </div>
     </section>
+    <script>
+        const menu = document.querySelector('.menu')
+            const close = document.querySelector('.close')
+            const nav = document.querySelector('nav')
+
+            menu.addEventListener('click', () => {
+                nav.classList.add('open-nav')
+            })
+
+            close.addEventListener('click', () => {
+                nav.classList.remove('open-nav')
+            })
+
+    </script>
 </body>
 </html>

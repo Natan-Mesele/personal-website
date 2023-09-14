@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+  margin: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+header .logo span {
+  color: #A1CCD1;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #20272E;
+  width: 50%;
+  height: 100%;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 4em;
+}
+nav ul li a {
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  padding: 0.8em 1.2em;
+  text-align: right;
+}
+nav ul li a:hover {
+  font-weight: bold;
+}
+nav .close {
+  float: right;
+  margin: 1em;
+  cursor: pointer;
+  width: 1.5em;
+}
+
+.menu {
+  cursor: pointer;
+  width: 1.8em;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+.hero {
+  text-align: center;
+}
+.hero .subhead {
+  color: gray;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.3em;
+  margin-top: 0.2em;
+}
+.hero .primary-cta {
+  border: 5px solid #A1CCD1;
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 0.6em 1.2em;
+  border-radius: 5em;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 2em;
+}
+.hero .primary-cta:hover {
+  background: #A1CCD1;
+  color: white;
+}
+.hero img {
+  width: 70%;
+  height: 18em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
