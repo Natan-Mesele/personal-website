@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color: #A1CCD1;
+  --primary-color: #279EFF;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
   font-family: "Poppins";
   box-sizing: border-box;
   margin: 1.5em;
+  overflow-x: hidden;
 }
 
 a {
@@ -30,7 +31,7 @@ header .logo {
   font-size: 1.1em;
 }
 header .logo span {
-  color: #A1CCD1;
+  color: var(--primary-color);
 }
 
 nav {
@@ -89,7 +90,7 @@ nav .close {
   margin-top: 0.2em;
 }
 .hero .primary-cta {
-  border: 5px solid #A1CCD1;
+  border: 5px solid var(--primary-color);
   color: black;
   font-size: 1.4em;
   font-weight: bold;
@@ -100,7 +101,7 @@ nav .close {
   margin-bottom: 2em;
 }
 .hero .primary-cta:hover {
-  background: #A1CCD1;
+  background: var(--primary-color);
   color: white;
 }
 .hero img {
@@ -127,7 +128,7 @@ nav .close {
   text-align: center;
 }
 .about .about-cta .primary-about {
-  border: 5px solid #A1CCD1;
+  border: 5px solid var(--primary-color);
   color: black;
   font-size: 0.9em;
   font-weight: bold;
@@ -158,4 +159,63 @@ nav .close {
 .service li .service-cta a {
   color: black;
   margin-right: 1em;
+}
+
+.hero-bg {
+  background: url("img/back.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  position: absolute;
+  left: 0;
+  left: 0;
+  z-index: -1;
+  margin: 3em 0;
+  opacity: 0.7;
+}
+
+.skill {
+  color: white;
+}
+.skill li {
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin: 0 2.5em;
+  font-size: 1.2rem;
+}
+
+.contact {
+  margin-top: -8em;
+}
+.contact h2 {
+  font-size: 2.5em;
+}
+.contact label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 0.9em;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+.contact input[type=submit] {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.8em 1.4em;
+  width: unset;
+  border-radius: 5em;
+  cursor: pointer;
+}
+.contact iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 4em;
 }/*# sourceMappingURL=main.css.map */
