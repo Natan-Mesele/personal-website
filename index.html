@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal website</title>
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -19,7 +18,7 @@
                             <li class="current"><a href="#">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#service">Service</a></li>
-                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -29,7 +28,8 @@
             <div class="container">
                 <div class="left-col">
                     <p class="subhead">WELCOME TO MY WORLD</p>
-                    <h1>Hi, I’m Natan Mesele<span class="text"></span></h1>
+                    <h1>Hi, I’m Natan Mesele</h1>
+                    <h2><span class="text"></span></h2>
                     <div class="hero-cta">
                         <a href="#" class="primary-cta">Go To Portfolio</a>
                     </div>
@@ -50,20 +50,10 @@
                 </div>
             </div>
         </section>
-        <div class="hero-bg"></div>
-            <section class="skill" id="skill">
-                <div class="container">
-                    <h1>Development skills</h1>
-                    <p>I develop my skill on online courses at Evangadi & Udemy.</p>
-                        <ul>
-                            <li>HTML/CSS/BOOTSTRAP</li>
-                            <li>JAVASCRIPT/DOM/JQUERY</li>
-                            <li>REACT JS/NODE JS/EXPRESS JS/MY SQL</li>
-                        </ul>
-                </div>
-            </section>
         <section class="service" id="service">
             <div class="container">
+                <h1>Why Choose My Services</h1>
+                <p class="title">I'm a great team player, and I enjoy working with others. some of my work qualities are listed below.</p>
                 <ul class="service-list">
                     <li>
                         <img src="img/aperture.svg" alt="aperture">
@@ -128,6 +118,45 @@
                 </ul>
             </div>
         </section>
+        <div class="hero-bg"></div>
+            <section class="skill" id="skill">
+                <div class="container">
+                    <h1>Development skills</h1>
+                    <p>I develop my skill on online courses at Evangadi & Udemy.</p>
+                        <ul>
+                            <li>HTML/CSS/BOOTSTRAP</li>
+                            <li>JAVASCRIPT/DOM/JQUERY</li>
+                            <li>REACT JS/NODE JS/EXPRESS JS/MY SQL</li>
+                        </ul>
+                </div>
+            </section>
+            <section class="portfolio" id="portfolio">
+                <div class="container">
+                    <h2>Recent Works</h2>
+                    <ul class="portfolio-list">
+                        <li>
+                            
+                            <a href="#"><img src="img/a.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            
+                            <a href="#"><img src="img/a.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            
+                            <a href="#"><img src="img/a.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            
+                            <a href="#"><img src="img/a.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            
+                            <a href="#"><img src="img/a.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         <section class="contact" id="contact">
             <div class="container">
                 <div class="left-contact">
@@ -160,6 +189,14 @@
 
             close.addEventListener('click', () => {
                 nav.classList.remove('open-nav')
+            })
+
+            let typed = new Typed('.text', {
+                strings: ['Front-End Developer!', 'Web Developer', 'UI/UX Design'],
+                typeSpeed: 80, 
+                backSpeed: 30, 
+                backDelay: 2000, 
+                loop: true, 
             })
     </script>
 </body>

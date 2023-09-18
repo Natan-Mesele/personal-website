@@ -12,7 +12,6 @@ body {
   padding: 0;
   font-family: "Poppins";
   box-sizing: border-box;
-  margin: 1.5em;
   overflow-x: hidden;
 }
 
@@ -27,6 +26,7 @@ section {
 header {
   display: flex;
   justify-content: space-between;
+  padding: 1.5em;
 }
 header .logo {
   position: relative;
@@ -90,9 +90,15 @@ nav .close {
   letter-spacing: 0.2em;
 }
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1.3em;
   margin-top: 0.2em;
+}
+.hero h2 {
+  font-size: 2em;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-top: -0.5em;
 }
 .hero .primary-cta {
   border: 5px solid var(--primary-color);
@@ -108,11 +114,11 @@ nav .close {
 .hero .primary-cta:hover {
   background: var(--primary-color);
   color: white;
-  box-shadow: 0 0 5px var(--primary-color), 0 0 25px var(--primary-color), 0 0 50px var(--primary-color), 0 0 100px var(--primary-color), 0 0 200px var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color), 0 0 15px var(--primary-color), 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 20px var(--primary-color);
 }
 .hero img {
   width: 70%;
-  height: 18em;
+  height: 20em;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -123,6 +129,7 @@ nav .close {
 .about {
   border: 3px solid rgba(249, 249, 249, 0.1);
   box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  margin: 1.5em;
 }
 .about p {
   text-align: justify;
@@ -156,6 +163,7 @@ nav .close {
 
 .service {
   text-align: center;
+  background: #F1EFEF;
 }
 .service ul {
   list-style-type: none;
@@ -165,6 +173,7 @@ nav .close {
   box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
   margin-bottom: 2em;
   padding: 2em 1em;
+  background: white;
 }
 .service li .service-cta a {
   color: black;
@@ -179,9 +188,7 @@ nav .close {
   height: 70vh;
   position: absolute;
   left: 0;
-  left: 0;
   z-index: -1;
-  margin: 3em 0;
   opacity: 0.7;
 }
 
@@ -195,9 +202,6 @@ nav .close {
   font-size: 1.2rem;
 }
 
-.contact {
-  margin-top: -6em;
-}
 .contact h2 {
   font-size: 2.5em;
 }
@@ -230,10 +234,43 @@ nav .close {
   margin-top: 4em;
 }
 
+.portfolio h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.portfolio img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portfolio .portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 2em;
+  list-style-type: none;
+}
+.portfolio .portfolio-list li {
+  border: 3px solid rgba(249, 249, 249, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+}
+
 @media only screen and (min-width: 768px) {
   body {
-    margin: 1.5em 5em;
     font-family: "Poppins", sans-serif;
+  }
+  .hero {
+    padding: 10em 8em;
+  }
+  .about {
+    margin: -7em 8em 2em 8em;
+  }
+  .service {
+    padding: 5em 6em;
+  }
+  .contact {
+    padding: 5em 8em;
   }
 }
 @media only screen and (min-width: 920px) {
@@ -248,6 +285,9 @@ nav .close {
     padding: 20px 10%;
     background: #051129;
     z-index: 100;
+  }
+  header .logo {
+    color: white;
   }
   nav {
     transform: translateX(0);
@@ -280,6 +320,9 @@ nav .close {
   .about .about-cta .primary-about {
     margin-right: 5em;
   }
+  .skill {
+    margin-top: -2em;
+  }
   .skill h1 {
     font-size: 2em;
   }
@@ -288,24 +331,31 @@ nav .close {
   }
   .skill li {
     margin-bottom: 2em;
-    margin-top: 2.5em;
+    margin-top: 2em;
   }
   .service-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     gap: 2em;
   }
+  .service li {
+    padding: 2em 1em;
+    width: 80%;
+    margin: 0;
+  }
 }
 @media only screen and (min-width: 1020px) {
-  .body {
-    width: 1020px;
-    margin: 0 auto;
+  .service h1 {
+    font-size: 2em;
   }
-  .wrapper {
-    padding: 0 4em;
+  .service .title {
+    font-weight: 500;
+    color: gray;
+    letter-spacing: 0.1em;
+    margin-bottom: 3em;
   }
-  .service {
-    padding: 0;
+  .service li {
+    background: white;
   }
   .hero .container {
     display: flex;
