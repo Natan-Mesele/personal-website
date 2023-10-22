@@ -14,8 +14,9 @@ body {
     padding: 0;
     font-family: 'Poppins';
     box-sizing: border-box;
-    
     overflow-x: hidden;
+    animation: fade-in 0.5s linear forwards;
+    animation-delay: 0.2s;
 }
 
 a {
@@ -26,6 +27,19 @@ section {
     padding: 5em 2em;
 }
 
+.hero-b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('img/hacker.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+}
+
 header  {
     display: flex;
     justify-content: space-between;
@@ -34,7 +48,7 @@ header  {
     .logo {
         position: relative;
         text-decoration: none;
-        color: black;
+        color: white;
         font-weight: bold;
         font-size: 1.2rem;
 
@@ -48,7 +62,7 @@ header  {
         position: fixed;
         top: 0;
         right: 0;
-        background: #20272E;
+        background: white;
         width: 50%;
         height: 100%;
         z-index: 999;
@@ -61,7 +75,7 @@ header  {
             margin-top: 4em;
 
             li a {
-                color: white;
+                color: black;
                 font-size: 1.2em;
                 display: block;
                 padding: .8em 1.2em;
@@ -103,6 +117,7 @@ header  {
         font-size: 3rem;
         line-height: 1.3em;
         margin-top: .2em;
+        color: white;
     }
 
     h2 {
@@ -114,7 +129,7 @@ header  {
 
     .primary-cta {
         border: 5px solid var(--primary-color);
-        color: black;
+        color: white;
         font-size: 1.4em;
         font-weight: bold;
         padding: .6em 1.2em;
@@ -126,30 +141,29 @@ header  {
         &:hover {
             background: var(--primary-color);
             color: white;
-            box-shadow: 0 0 5px var(--primary-color), 
-            0 0 15px var(--primary-color), 0 0 10px var(--primary-color), 
-            0 0 20px var(--primary-color), 0 0 20px var(--primary-color);
         }
     }
+}
 
+.about .container {
+    padding: 2em;
+    
     img {
-        width: 70%;
+        width: 18em;
         height: 20em;
         object-fit: cover;
         border-radius: 50%;
         border: 3px solid rgba(249,249,249, 0.1);
         box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
         rgb(0 0 0 /73%) 0px 16px 10px -10px;
-    }
-}
+        }
 
-.about {
-    border: 3px solid rgba(249,249,249, 0.1);
-    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 /73%) 0px 16px 10px -10px;
-    margin: 1.5em;
+        border: 3px solid rgba(249,249,249, 0.1);
+        box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+        rgb(0 0 0 /73%) 0px 16px 10px -10px;
+        margin: 1.5em;
 
-    p {
+        p {
         text-align: justify;
 
         span {
@@ -373,7 +387,11 @@ header  {
         width: 22em;
         height: 25em;
     }
-
+    .about .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 5em;
+    }
     .about .about-cta .primary-about {
         margin-right: 5em;
         
@@ -430,12 +448,8 @@ header  {
     }
 
     .hero .container {
-        display: flex;
-        justify-content: space-between;
-        padding: 3em 5em;
-
         .left-col {
-            text-align: left;
+            text-align: center;
         }
     }
 
@@ -456,3 +470,4 @@ header  {
         }
     }
 }
+

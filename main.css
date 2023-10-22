@@ -13,6 +13,8 @@ body {
   font-family: "Poppins";
   box-sizing: border-box;
   overflow-x: hidden;
+  animation: fade-in 0.5s linear forwards;
+  animation-delay: 0.2s;
 }
 
 a {
@@ -23,6 +25,18 @@ section {
   padding: 5em 2em;
 }
 
+.hero-b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("img/hacker.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -31,7 +45,7 @@ header {
 header .logo {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -43,7 +57,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  background: #20272E;
+  background: white;
   width: 50%;
   height: 100%;
   z-index: 999;
@@ -56,7 +70,7 @@ nav ul {
   margin-top: 4em;
 }
 nav ul li a {
-  color: white;
+  color: black;
   font-size: 1.2em;
   display: block;
   padding: 0.8em 1.2em;
@@ -93,6 +107,7 @@ nav .close {
   font-size: 3rem;
   line-height: 1.3em;
   margin-top: 0.2em;
+  color: white;
 }
 .hero h2 {
   font-size: 2em;
@@ -102,7 +117,7 @@ nav .close {
 }
 .hero .primary-cta {
   border: 5px solid var(--primary-color);
-  color: black;
+  color: white;
   font-size: 1.4em;
   font-weight: bold;
   padding: 0.6em 1.2em;
@@ -114,10 +129,16 @@ nav .close {
 .hero .primary-cta:hover {
   background: var(--primary-color);
   color: white;
-  box-shadow: 0 0 5px var(--primary-color), 0 0 15px var(--primary-color), 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 20px var(--primary-color);
 }
-.hero img {
-  width: 70%;
+
+.about .container {
+  padding: 2em;
+  border: 3px solid rgba(249, 249, 249, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  margin: 1.5em;
+}
+.about .container img {
+  width: 18em;
   height: 20em;
   -o-object-fit: cover;
      object-fit: cover;
@@ -125,26 +146,20 @@ nav .close {
   border: 3px solid rgba(249, 249, 249, 0.1);
   box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
 }
-
-.about {
-  border: 3px solid rgba(249, 249, 249, 0.1);
-  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
-  margin: 1.5em;
-}
-.about p {
+.about .container p {
   text-align: justify;
 }
-.about p span {
+.about .container p span {
   color: var(--primary-color);
   font-weight: bold;
 }
-.about h1 {
+.about .container h1 {
   font-size: 2rem;
 }
-.about .about-cta {
+.about .container .about-cta {
   text-align: center;
 }
-.about .about-cta .primary-about {
+.about .container .about-cta .primary-about {
   border: 5px solid var(--primary-color);
   color: black;
   font-size: 0.9em;
@@ -156,7 +171,7 @@ nav .close {
   margin-top: 1em;
   margin-right: 1em;
 }
-.about .about-cta .primary-about:hover {
+.about .container .about-cta .primary-about:hover {
   background: var(--primary-color);
   color: white;
 }
@@ -317,6 +332,11 @@ nav .close {
     width: 22em;
     height: 25em;
   }
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+  }
   .about .about-cta .primary-about {
     margin-right: 5em;
   }
@@ -357,13 +377,8 @@ nav .close {
   .service li {
     background: white;
   }
-  .hero .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 3em 5em;
-  }
   .hero .container .left-col {
-    text-align: left;
+    text-align: center;
   }
   .skill .container {
     margin-left: 14em;
