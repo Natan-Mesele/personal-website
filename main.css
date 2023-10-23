@@ -201,7 +201,7 @@ nav .close {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   position: absolute;
   left: 0;
   z-index: -1;
@@ -211,13 +211,15 @@ nav .close {
 .skill {
   color: white;
 }
-.skill li {
+.skill ul li {
   font-weight: bold;
-  margin-bottom: 1em;
-  margin: 0 2.5em;
+  margin: 1.5em 2.5em;
   font-size: 1.2rem;
 }
 
+.contact {
+  margin-top: -4em;
+}
 .contact h2 {
   font-size: 2.5em;
 }
@@ -250,6 +252,9 @@ nav .close {
   margin-top: 4em;
 }
 
+.portfolio {
+  margin-top: 8em;
+}
 .portfolio h2 {
   text-align: center;
   font-size: 2em;
