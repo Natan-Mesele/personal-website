@@ -97,6 +97,7 @@ nav .close {
 
 .hero {
   text-align: center;
+  margin-bottom: 10em;
 }
 .hero .subhead {
   color: gray;
@@ -138,7 +139,7 @@ nav .close {
   margin: 1.5em;
 }
 .about .container img {
-  width: 18em;
+  width: 14em;
   height: 20em;
   -o-object-fit: cover;
      object-fit: cover;
@@ -324,7 +325,7 @@ nav .close {
     padding: 10em 8em;
   }
   .about {
-    margin: -7em 8em 2em 8em;
+    margin: 12em 2em 2em 2em;
   }
   .service {
     padding: 5em 6em;
