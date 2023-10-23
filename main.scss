@@ -312,45 +312,64 @@ header  {
     }
 }
 
-.footer  {
+.section-footer {
     background: #051129;
-    color: gray;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    color: white;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+        gap: 1.5em;
+
+        img {
+            width: 1.5em;
+            background: white;
+            border-radius: 50%;
+        }
+
+        
+
+        .left-col {
+
+            li {
+                color: gray;
+                margin: 0 -2.5em;
+                margin-bottom: 1em;
+                font-size: 0.9em;
+            }  
+        }
+
+        .mid-col {
+            ul {
+                display: flex;
+                gap: 1em;
+                margin: 0 -2.5em;
+            }
+        }
+        .right-col {
+            ul {
+                margin: 0 -2.5em;
+                
+                li {
+                    padding-bottom: 1em;
+
+                    a {
+                        color: gray;
+                    }
+                }
+            }
+        } 
+    }
 
     ul {
         list-style-type: none;
-        margin-bottom: 1em;
-
-        .title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: white;
-        }
-        li {
-            font-size: 0.9rem;
-            margin-bottom: 1em;
-        }
-        
     }
-
-    img {
-        background: white;
-        border-radius: 50%;
-        width: 1.5em;
-    }
-
-    .mid-col {
-
-        ul {
-            display: flex;
-            gap: 1em;
-        }
-        
-        h3 {
-            padding: 0 1.8em;
-            color: white;
-        }
+    p {
+        border-top: 1px solid gray;
+        padding-top: 1em;
+        font-size: 0.9em;
+        color: gray;
+        text-align: center;
     }
 }
 
