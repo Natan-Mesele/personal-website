@@ -349,8 +349,6 @@ nav .close {
   }
   .section-footer .container {
     padding-left: 10em;
-    display: flex;
-    gap: 18em;
   }
 }
 @media only screen and (min-width: 920px) {
