@@ -48,6 +48,7 @@ header .logo {
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+  width: 4em;
 }
 header .logo span {
   color: var(--primary-color);
@@ -96,6 +97,7 @@ nav .close {
 }
 
 .BgColour {
+  height: 3rem;
   transition: all 1s;
   background-color: white;
   border-bottom: 1px solid lightgray;
