@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <div class="hero-b"></div>
-            <header id="home">
+            <header id="navbar" class="navbar">
                     <a href="#" class="logo">NA<span>TI<span></a>
 
                     <nav>
@@ -250,7 +250,7 @@
             var email = document.getElementById("email").value;
             var message = document.getElementById("message").value;
 
-            var body = "name: " + name + "<br/> email: " + email + "<br/> message: " + message;
+            var body = "name: " + name + "<br/> email: " + email + "<br/> subject: " + subject + "<br/> message: " + message;
 
             console.log(body);
             Email.send({
@@ -268,11 +268,25 @@
                 }
 
                 else {
-                    swal("Sm is Wrong", "Your Data is not Successfull Received", "success");
+                    swal("Something is Wrong", "Your Data is not Successfull Received", "success");
                 }
             }
         ); 
     }
+
+
+        function scrollValue() {
+        var navbar = document.getElementById('navbar');
+        var scroll = window.scrollY;
+        if (scroll < 200) {
+            navbar.classList.remove('BgColour');
+        } else {
+            navbar.classList.add('BgColour');
+        }
+    }
+
+    window.addEventListener('scroll', scrollValue);
+
     </script>
 </body>
 </html>
