@@ -43,6 +43,7 @@ section {
 header  {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1.5em;
 
     .logo {
@@ -98,7 +99,6 @@ header  {
     .menu {
         cursor: pointer;
         width: 1.8em;
-        
     }
 
 .open-nav {
@@ -114,15 +114,11 @@ header  {
     a {
         color: black;
     }
-
-    .logo {
-        color: black;
-    }
 }
 
 .hero {
     text-align: center;
-    margin-bottom: 10em;
+    margin-bottom: 5em;
 
     .subhead {
         color: gray;
@@ -302,7 +298,6 @@ header  {
 }
 
 .portfolio {
-    margin-top: 8em;
 
     h2 {
         text-align: center;
@@ -346,7 +341,7 @@ header  {
         }
 
         .left-col {
-
+            
             li {
                 color: gray;
                 margin: 0 -2.5em;
@@ -395,19 +390,27 @@ header  {
     }
 
     .hero {
-        padding: 14em 8em;
+        padding: 10em 8em;
     }
 
     .about {
-        margin: 12em 2em 2em 2em;
+        margin: 0 2em 0 2em;
     }
 
     .service {
-        padding: 5em 6em;
+        padding: 1em 6em;
     }
 
     .contact {
         padding: 5em 8em;
+    }
+
+    .section-footer {
+        .container {
+            padding-left: 10em;
+            display: flex;
+            gap: 18em;
+        }
     }
 }
 
@@ -425,7 +428,7 @@ header  {
         z-index: 100;
 
         .logo {
-            color: white;
+            color: black;
         }
     }
 
@@ -500,6 +503,12 @@ header  {
             padding: 2em 1em;
             width: 80%;
             margin: 0;
+        }
+    }
+
+    .BgColour {
+        .logo {
+            filter: brightness(0);
         }
     }
 }

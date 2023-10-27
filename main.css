@@ -40,6 +40,7 @@ section {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5em;
 }
 header .logo {
@@ -105,13 +106,10 @@ nav .close {
 .BgColour a {
   color: black;
 }
-.BgColour .logo {
-  color: black;
-}
 
 .hero {
   text-align: center;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 .hero .subhead {
   color: gray;
@@ -266,9 +264,6 @@ nav .close {
   margin-top: 4em;
 }
 
-.portfolio {
-  margin-top: 8em;
-}
 .portfolio h2 {
   text-align: center;
   font-size: 2em;
@@ -341,16 +336,21 @@ nav .close {
     font-family: "Poppins", sans-serif;
   }
   .hero {
-    padding: 14em 8em;
+    padding: 10em 8em;
   }
   .about {
-    margin: 12em 2em 2em 2em;
+    margin: 0 2em 0 2em;
   }
   .service {
-    padding: 5em 6em;
+    padding: 1em 6em;
   }
   .contact {
     padding: 5em 8em;
+  }
+  .section-footer .container {
+    padding-left: 10em;
+    display: flex;
+    gap: 18em;
   }
 }
 @media only screen and (min-width: 920px) {
@@ -366,7 +366,7 @@ nav .close {
     z-index: 100;
   }
   header .logo {
-    color: white;
+    color: black;
   }
   nav {
     transform: translateX(0);
@@ -426,6 +426,9 @@ nav .close {
     padding: 2em 1em;
     width: 80%;
     margin: 0;
+  }
+  .BgColour .logo {
+    filter: brightness(0);
   }
 }
 @media only screen and (min-width: 1020px) {
