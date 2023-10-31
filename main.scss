@@ -126,7 +126,7 @@ header  {
 
     h1 {
         font-size: 3rem;
-        line-height: 1.3rem;
+        line-height: 3rem;
         margin-top: .2rem;
         color: white;
     }
@@ -380,6 +380,10 @@ header  {
         color: gray;
         text-align: center;
     }
+}
+
+.contact {
+    margin: 1rem;
 }
 
 .reveal {

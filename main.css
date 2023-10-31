@@ -116,7 +116,7 @@ nav .close {
 }
 .hero h1 {
   font-size: 3rem;
-  line-height: 1.3rem;
+  line-height: 3rem;
   margin-top: 0.2rem;
   color: white;
 }
@@ -327,6 +327,10 @@ nav .close {
   font-size: 0.9rem;
   color: gray;
   text-align: center;
+}
+
+.contact {
+  margin: 1rem;
 }
 
 .reveal {
