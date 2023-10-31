@@ -44,7 +44,7 @@
                 </div>
             </section>
         <section class="about" id="about">
-            <div class="container">
+            <div class="container reveal">
                 <img src="img//na.jpg" alt="personal pic" class="hero-img">
                 <div class="right-about">
                     <h1>About</h1>
@@ -60,7 +60,8 @@
             </div>
         </section>
         <section class="service" id="service">
-            <div class="container">
+            <div class="container reveal">
+                <h1>MY SERVICES</h1>
                 <h1>Why Choose My Services</h1>
                 <p class="title">I'm a great team player, and I enjoy working with others. some of my work qualities are listed below.</p>
                 <ul class="service-list">
@@ -129,7 +130,7 @@
         </section>
         <div class="hero-bg"></div>
             <section class="skill" id="skill">
-                <div class="container">
+                <div class="container reveal">
                     <h1>Development skills</h1>
                     <p>I develop my skill on online courses at Evangadi & Udemy.</p>
                         <ul>
@@ -140,7 +141,7 @@
                 </div>
             </section>
             <section class="portfolio" id="portfolio">
-                <div class="container">
+                <div class="container reveal">
                     <h2>Recent Works</h2>
                     <ul class="portfolio-list">
                         <li>
@@ -171,7 +172,7 @@
                 </div>
             </section>
         <section class="contact" id="contact">
-            <div class="container">
+            <div class="container reveal">
                 <div class="left-contact">
                     <h2>Contact</h2>
                     <form action="">
@@ -194,7 +195,7 @@
             </div>
         </section>
         <section class="section-footer">
-            <div class="container">
+            <div class="container reveal">
                 <div class="left-col">
                     <h3>Address</h3>
                     <ul>
@@ -206,11 +207,11 @@
                 <div class="mid-col">
                     <h3 class="tit">Social Media</h3>
                     <ul>
-                        <li><a href="#"><img src="img/face.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/git.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/natan.mesele.1"><img src="img/face.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://github.com/Natan-Mesele?tab=repositories"><img src="img/git.png" alt=""></a></li>
                         <li><a href="#"><img src="img/twitter1.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/inst.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/linkedin.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/mezmurlyrics3/"><img src="img/inst.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/natty-mesele-0ab908285/"><img src="img/linkedin.png" alt=""></a></li>
                     </ul>
                 </div>
                 <div class="right-col">
@@ -286,8 +287,27 @@
         }
     }
 
-    window.addEventListener('scroll', scrollValue);
+        window.addEventListener('scroll', scrollValue);
 
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
     </script>
 </body>
 </html>
