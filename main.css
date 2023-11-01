@@ -107,7 +107,7 @@ nav .close {
 
 .hero {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 .hero .subhead {
   color: gray;
@@ -356,7 +356,7 @@ nav .close {
     padding: 10rem 8rem;
   }
   .about {
-    margin: 4rem 2rem;
+    margin: 9rem 0 2rem 0;
   }
   .service {
     padding: 1rem 6rem;
@@ -366,6 +366,9 @@ nav .close {
   }
   .section-footer .container {
     padding-left: 10rem;
+  }
+  .portfolio {
+    margin: 4rem 0 0 0;
   }
 }
 @media only screen and (min-width: 920px) {

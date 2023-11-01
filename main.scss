@@ -116,7 +116,7 @@ header  {
 
 .hero {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 
     .subhead {
         color: gray;
@@ -412,7 +412,7 @@ header  {
     }
 
     .about {
-        margin: 4rem 2rem;
+        margin: 9rem 0 2rem 0;
     }
 
     .service {
@@ -427,6 +427,10 @@ header  {
         .container {
             padding-left: 10rem;
         }
+    }
+
+    .portfolio {
+        margin: 4rem 0 0 0;
     }
 }
 
