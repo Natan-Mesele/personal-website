@@ -265,7 +265,7 @@ nav .close {
 .portfolio h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin: 5rem 0;
 }
 .portfolio img {
   width: 100%;
@@ -353,7 +353,7 @@ nav .close {
     padding: 10rem 8rem;
   }
   .about {
-    margin: 0 2rem 0 2rem;
+    margin: 4rem 2rem;
   }
   .service {
     padding: 1rem 6rem;
