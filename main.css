@@ -142,6 +142,9 @@ nav .close {
   color: white;
 }
 
+.about {
+  margin: 4rem 0;
+}
 .about .container {
   padding: 2rem;
   border: 3px solid rgba(249, 249, 249, 0.1);
@@ -265,7 +268,7 @@ nav .close {
 .portfolio h2 {
   text-align: center;
   font-size: 2rem;
-  margin: 5rem 0;
+  margin: 6rem 0;
 }
 .portfolio img {
   width: 100%;
