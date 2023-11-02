@@ -142,9 +142,6 @@ nav .close {
   color: white;
 }
 
-.about {
-  margin: 10rem 0;
-}
 .about .container {
   border: 3px solid rgba(249, 249, 249, 0.1);
   box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
@@ -153,6 +150,7 @@ nav .close {
 .about .container img {
   position: relative;
   left: 0;
+  text-align: left;
   width: 10rem;
   height: 16rem;
   -o-object-fit: cover;
@@ -218,7 +216,7 @@ nav .close {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   position: absolute;
   left: 0;
   z-index: -1;
@@ -234,25 +232,25 @@ nav .close {
   font-size: 1.2rem;
 }
 
-.contact {
-  margin-top: -4rem;
+.contact .container {
+  margin-top: -7rem;
 }
-.contact h2 {
+.contact .container h2 {
   font-size: 2.5rem;
 }
-.contact label {
+.contact .container label {
   display: block;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
-.contact input, .contact textarea {
+.contact .container input, .contact .container textarea {
   width: 100%;
   padding: 0.9rem;
   border: 1px solid gray;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
 }
-.contact input[type=button] {
+.contact .container input[type=button] {
   background: var(--primary-color);
   color: white;
   border: none;
@@ -263,7 +261,7 @@ nav .close {
   border-radius: 5rem;
   cursor: pointer;
 }
-.contact iframe {
+.contact .container iframe {
   width: 100%;
   height: 300px;
   margin-top: 4rem;
@@ -272,7 +270,6 @@ nav .close {
 .portfolio h2 {
   text-align: center;
   font-size: 2rem;
-  margin: 6rem 0;
 }
 .portfolio img {
   width: 100%;
@@ -350,30 +347,29 @@ nav .close {
   opacity: 1;
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    font-family: "Poppins", sans-serif;
-  }
+@media only screen and (min-width: 280px) {
   .hero {
-    padding: 10rem 8rem;
+    margin-top: 2rem;
   }
   .about {
-    margin: 9rem 0 2rem 0;
+    margin-top: 7rem;
   }
-  .service {
-    padding: 1rem 6rem;
-  }
-  .contact {
-    padding: 5rem 8rem;
-  }
-  .section-footer .container {
-    padding-left: 10rem;
+  .skill {
+    margin-top: -3rem;
   }
   .portfolio {
-    margin: 4rem 0 0 0;
+    margin-top: -4rem;
   }
 }
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 400px) {
+  .about {
+    margin-top: 11rem;
+  }
+  .portfolio {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -385,8 +381,89 @@ nav .close {
     padding: 20px 10%;
     z-index: 100;
   }
-  header .logo {
-    color: black;
+  nav {
+    transform: translateX(0);
+    position: sticky;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+    margin: 0 14rem 0 0;
+  }
+  nav ul .current a {
+    font-weight: bold;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
+  nav .close {
+    display: none;
+  }
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 6rem;
+  }
+  .about .about-cta .primary-about {
+    margin-right: 5rem;
+  }
+  .hero-b {
+    height: 60vh;
+  }
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 2rem;
+  }
+  .service li {
+    padding: 2rem 1rem;
+    width: 80%;
+    margin: 0;
+  }
+  .portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 2rem;
+    list-style-type: none;
+  }
+  .portfolio-list li {
+    border: 3px solid rgba(249, 249, 249, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  }
+  .hero-bg {
+    height: 40vh;
+  }
+  .contact .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+  .contact .container .left-col {
+    width: 70%;
+  }
+  .contact .container iframe {
+    width: 40%;
+    height: 38rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu {
+    display: none;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    z-index: 100;
   }
   nav {
     transform: translateX(0);
@@ -461,7 +538,42 @@ nav .close {
     filter: brightness(0);
   }
 }
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1201px) {
+  .menu {
+    display: none;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    z-index: 100;
+  }
+  nav {
+    transform: translateX(0);
+    position: sticky;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+    margin: 0 14rem 0 0;
+  }
+  nav ul .current a {
+    font-weight: bold;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
+  nav .close {
+    display: none;
+  }
   .service h1 {
     font-size: 2rem;
   }
