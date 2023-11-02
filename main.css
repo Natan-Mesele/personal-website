@@ -563,9 +563,6 @@ nav .close {
   .hero-bg {
     height: 80vh;
   }
-  .section-footer .container {
-    padding-left: 10rem;
-  }
 }
 @media only screen and (min-width: 1200px) {
   .menu {

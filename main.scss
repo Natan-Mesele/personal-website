@@ -555,7 +555,7 @@ header  {
     .hero {
         margin-top: 8rem;
     }
-    
+
     .BgColour {
         .logo {
             filter: brightness(0);
@@ -665,25 +665,22 @@ header  {
         
     }
 
-    .BgColour {
-        .logo {
-            filter: brightness(0);
+        .BgColour {
+            .logo {
+                filter: brightness(0);
+            }
         }
-    }
 
-    .hero-b {
-        height: 100vh;
-    }
+        .hero-b {
+            height: 100vh;
+        }
 
-    .skill {
-       padding-left: 16rem; 
-    }
-    .hero-bg {
-        height: 80vh;
-    }
-    .section-footer .container {
-        padding-left: 10rem;
-    }
+        .skill {
+        padding-left: 16rem; 
+        }
+        .hero-bg {
+            height: 80vh;
+        }
 }
 
 @media only screen and (min-width: 1200px) {
