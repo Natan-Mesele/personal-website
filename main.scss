@@ -302,7 +302,6 @@ header  {
 }
 
 .portfolio {
-    
 
     h2 {
         text-align: center;
@@ -426,7 +425,7 @@ header  {
     }
 
     .portfolio {
-        margin-top: -4rem;
+        margin-top: -2rem;
     }
 
     .hero-b {
@@ -440,7 +439,7 @@ header  {
    }
 
    .portfolio {
-    margin-top: 4rem;
+    margin-top: 1rem;
    }
 
    .hero-b {
@@ -496,7 +495,6 @@ header  {
         display: flex;
         justify-content: space-between;
         gap: 5rem;
-        margin-top: 6rem;
     }
     .about .about-cta .primary-about {
         margin-right: 5rem;
@@ -535,7 +533,11 @@ header  {
     }
 
     .hero-bg {
-        height: 40vh;
+        height: 60vh;
+    }
+
+    .hero-b {
+        height: 100vh;
     }
 
     .contact .container{
@@ -615,6 +617,7 @@ header  {
         display: flex;
         justify-content: space-between;
         gap: 5rem;
+        margin-top: -4rem;
     }
     .about .about-cta .primary-about {
         margin-right: 5rem;
@@ -651,20 +654,23 @@ header  {
         }
     }
 
-    .portfolio-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-        gap: 2rem;
-        list-style-type: none;
-        
-        li {
-            border: 3px solid rgba(249,249,249, 0.1);
-            box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-            rgb(0 0 0 /73%) 0px 16px 10px -10px;
+    .portfolio {
+        margin-top: 4rem;
+    
+        .portfolio-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+            gap: 2rem;
+            list-style-type: none;
+            
+            li {
+                border: 3px solid rgba(249,249,249, 0.1);
+                box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+                rgb(0 0 0 /73%) 0px 16px 10px -10px;
+            }
+            
         }
-        
     }
-
         .BgColour {
             .logo {
                 filter: brightness(0);
@@ -681,11 +687,19 @@ header  {
         .hero-bg {
             height: 80vh;
         }
+
+        .section-footer .container {
+            padding-left: 10rem;
+        }
 }
 
 @media only screen and (min-width: 1200px) {
     .menu {
         display: none;
+    }
+
+    section {
+        padding: 2rem 6rem;
     }
 
     header {
@@ -761,13 +775,26 @@ header  {
     }
 
     .skill .container {
-        margin-left: 14rem;
+        margin: 4rem 0 0 4rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+
+        ul li {
+            font-size: 1.4rem;
+        }
     }
 
     .contact .container{
         display: flex;
         justify-content: space-between;
         gap: 6rem;
+        margin-top: .5rem;
 
         .left-col {
             width: 70%;
@@ -778,7 +805,14 @@ header  {
         }
     }
     .portfolio .container{
-        margin-top: 6rem;
+        margin-top: 8rem;
+    }
+
+    .section-footer .container {
+        padding-left: 10rem;
+    }
+    .about .container {
+        margin-top: .5rem;
     }
 }
 

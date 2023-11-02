@@ -363,7 +363,7 @@ nav .close {
     margin-top: -3rem;
   }
   .portfolio {
-    margin-top: -4rem;
+    margin-top: -2rem;
   }
   .hero-b {
     height: 95vh;
@@ -374,7 +374,7 @@ nav .close {
     margin-top: 11rem;
   }
   .portfolio {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
   .hero-b {
     height: 85vh;
@@ -420,7 +420,6 @@ nav .close {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
-    margin-top: 6rem;
   }
   .about .about-cta .primary-about {
     margin-right: 5rem;
@@ -449,7 +448,10 @@ nav .close {
     box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
   }
   .hero-bg {
-    height: 40vh;
+    height: 60vh;
+  }
+  .hero-b {
+    height: 100vh;
   }
   .contact .container {
     display: flex;
@@ -514,6 +516,7 @@ nav .close {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
+    margin-top: -4rem;
   }
   .about .about-cta .primary-about {
     margin-right: 5rem;
@@ -541,13 +544,16 @@ nav .close {
     width: 80%;
     margin: 0;
   }
-  .portfolio-list {
+  .portfolio {
+    margin-top: 4rem;
+  }
+  .portfolio .portfolio-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     gap: 2rem;
     list-style-type: none;
   }
-  .portfolio-list li {
+  .portfolio .portfolio-list li {
     border: 3px solid rgba(249, 249, 249, 0.1);
     box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
   }
@@ -563,10 +569,16 @@ nav .close {
   .hero-bg {
     height: 80vh;
   }
+  .section-footer .container {
+    padding-left: 10rem;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .menu {
     display: none;
+  }
+  section {
+    padding: 2rem 6rem;
   }
   header {
     position: fixed;
@@ -625,12 +637,22 @@ nav .close {
     font-size: 2rem;
   }
   .skill .container {
-    margin-left: 14rem;
+    margin: 4rem 0 0 4rem;
+  }
+  .skill .container h1 {
+    font-size: 3rem;
+  }
+  .skill .container p {
+    font-size: 1.4rem;
+  }
+  .skill .container ul li {
+    font-size: 1.4rem;
   }
   .contact .container {
     display: flex;
     justify-content: space-between;
     gap: 6rem;
+    margin-top: 0.5rem;
   }
   .contact .container .left-col {
     width: 70%;
@@ -640,6 +662,12 @@ nav .close {
     height: 38rem;
   }
   .portfolio .container {
-    margin-top: 6rem;
+    margin-top: 8rem;
+  }
+  .section-footer .container {
+    padding-left: 10rem;
+  }
+  .about .container {
+    margin-top: 0.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
