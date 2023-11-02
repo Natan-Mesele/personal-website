@@ -115,13 +115,13 @@ nav .close {
   letter-spacing: 0.2rem;
 }
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3rem;
   margin-top: 0.2rem;
   color: white;
 }
 .hero h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--primary-color);
   font-weight: bold;
   margin-top: -0.5rem;
@@ -129,7 +129,7 @@ nav .close {
 .hero .primary-cta {
   border: 5px solid var(--primary-color);
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   padding: 0.6rem 1.2rem;
   border-radius: 5rem;
@@ -146,14 +146,13 @@ nav .close {
   margin: 10rem 0;
 }
 .about .container {
-  padding: 2rem;
   border: 3px solid rgba(249, 249, 249, 0.1);
   box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
-  margin: 1.5rem;
+  padding: 1.5rem;
 }
 .about .container img {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  position: relative;
+  left: 0;
   width: 10rem;
   height: 16rem;
   -o-object-fit: cover;
@@ -161,6 +160,8 @@ nav .close {
   border-radius: 50%;
   border: 3px solid rgba(249, 249, 249, 0.1);
   box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  margin: 1.5rem;
+  margin-bottom: 3rem;
 }
 .about .container p {
   text-align: justify;
@@ -170,6 +171,7 @@ nav .close {
   font-weight: bold;
 }
 .about .container h1 {
+  position: relative;
   font-size: 2rem;
 }
 .about .container .about-cta {
