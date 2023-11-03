@@ -483,6 +483,17 @@ nav .close {
     filter: brightness(0);
   }
 }
+@media only screen and (min-width: 800px) {
+  .hero-b {
+    height: 70vh;
+  }
+  .hero-bg {
+    height: 40vh;
+  }
+  .hero {
+    margin-top: 10rem;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .menu {
     display: none;
@@ -556,7 +567,7 @@ nav .close {
     margin: 0;
   }
   .portfolio {
-    margin-top: 4rem;
+    margin-top: 8rem;
   }
   .portfolio .portfolio-list {
     display: grid;
@@ -578,7 +589,7 @@ nav .close {
     padding-left: 16rem;
   }
   .hero-bg {
-    height: 80vh;
+    height: 70vh;
   }
   .section-footer .container {
     padding-left: 10rem;

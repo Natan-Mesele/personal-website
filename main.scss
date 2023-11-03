@@ -581,6 +581,20 @@ header  {
     }
 }
 
+@media only screen and (min-width: 800px) {
+    .hero-b {
+        height: 70vh;
+    }
+
+    .hero-bg {
+        height: 40vh;
+    }
+
+    .hero {
+        margin-top: 10rem;
+    }
+}
+
 @media only screen and (min-width:  1024px) {
     .menu {
         display: none;
@@ -671,7 +685,7 @@ header  {
     }
 
     .portfolio {
-        margin-top: 4rem;
+        margin-top: 8rem;
     
         .portfolio-list {
             display: grid;
@@ -701,7 +715,7 @@ header  {
         padding-left: 16rem; 
         }
         .hero-bg {
-            height: 80vh;
+            height: 70vh;
         }
 
         .section-footer .container {
