@@ -417,7 +417,7 @@ header  {
         }
     }
     .about {
-        margin-top: 7rem;
+        margin-top: 8rem;
     }
 
     .skill {
@@ -425,7 +425,7 @@ header  {
     }
 
     .portfolio {
-        margin-top: -2rem;
+        margin-top: -1rem;
     }
 
     .hero-b {
@@ -435,16 +435,36 @@ header  {
 
 @media only screen and (min-width: 400px){
    .about {
-    margin-top: 11rem;
+    margin-top: 18rem;
    }
 
    .portfolio {
-    margin-top: 1rem;
+    margin-top: 10rem;
    }
 
    .hero-b {
     height: 85vh;
    }
+
+   .hero-bg {
+    height: 70vh;
+   }
+
+   .skill .container{
+    ul li {
+        font-size: .7rem;
+    }
+   }
+
+   .hero {
+    margin-top: 4rem;
+   }
+}
+
+@media only screen and (min-width:  500px){
+    .hero {
+        margin-top: -7rem;
+    }
 }
 
 @media only screen and (min-width:  768px) {
@@ -501,10 +521,6 @@ header  {
         
     }
 
-    .hero-b {
-        height: 60vh;
-    }
-
     .service-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -533,7 +549,7 @@ header  {
     }
 
     .hero-bg {
-        height: 60vh;
+        height: 70vh;
     }
 
     .hero-b {
@@ -555,7 +571,7 @@ header  {
     }
 
     .hero {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 
     .BgColour {
