@@ -214,7 +214,7 @@ nav .close {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   position: absolute;
   left: 0;
   z-index: -1;
@@ -346,52 +346,16 @@ nav .close {
 }
 
 @media only screen and (min-width: 280px) {
-  .hero {
-    margin-top: 2rem;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero .text {
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
-  }
   .about {
     margin-top: 8rem;
-  }
-  .skill {
-    margin-top: -3rem;
-  }
-  .portfolio {
-    margin-top: -1rem;
-  }
-  .hero-b {
-    height: 95vh;
   }
 }
 @media only screen and (min-width: 400px) {
   .about {
-    margin-top: 18rem;
+    margin-top: 12rem;
   }
   .portfolio {
-    margin-top: 10rem;
-  }
-  .hero-b {
-    height: 85vh;
-  }
-  .hero-bg {
-    height: 70vh;
-  }
-  .skill .container ul li {
-    font-size: 0.7rem;
-  }
-  .hero {
-    margin-top: 4rem;
-  }
-}
-@media only screen and (min-width: 500px) {
-  .hero {
-    margin-top: -7rem;
+    margin-top: 6rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -434,6 +398,7 @@ nav .close {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
+    margin-top: 8rem;
   }
   .about .about-cta .primary-about {
     margin-right: 5rem;
@@ -448,6 +413,9 @@ nav .close {
     width: 80%;
     margin: 0;
   }
+  .portfolio .container {
+    margin-top: 12rem;
+  }
   .portfolio-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -457,12 +425,6 @@ nav .close {
   .portfolio-list li {
     border: 3px solid rgba(249, 249, 249, 0.1);
     box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
-  }
-  .hero-bg {
-    height: 70vh;
-  }
-  .hero-b {
-    height: 100vh;
   }
   .contact .container {
     display: flex;
@@ -477,21 +439,18 @@ nav .close {
     height: 38rem;
   }
   .hero {
-    margin-top: 2rem;
+    margin-top: 12rem;
   }
   .BgColour .logo {
     filter: brightness(0);
   }
 }
 @media only screen and (min-width: 800px) {
-  .hero-b {
-    height: 70vh;
+  .about {
+    margin-top: 22rem;
   }
-  .hero-bg {
-    height: 40vh;
-  }
-  .hero {
-    margin-top: 10rem;
+  .portfolio {
+    margin-top: 8rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -538,7 +497,6 @@ nav .close {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
-    margin-top: -4rem;
   }
   .about .about-cta .primary-about {
     margin-right: 5rem;
@@ -582,17 +540,14 @@ nav .close {
   .BgColour .logo {
     filter: brightness(0);
   }
-  .hero-b {
-    height: 100vh;
-  }
   .skill {
     padding-left: 16rem;
   }
-  .hero-bg {
-    height: 70vh;
-  }
   .section-footer .container {
     padding-left: 10rem;
+  }
+  .hero .container {
+    margin-top: 4rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -688,8 +643,5 @@ nav .close {
   }
   .section-footer .container {
     padding-left: 10rem;
-  }
-  .about .container {
-    margin-top: 0.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -244,7 +244,7 @@ header  {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     position: absolute;
     left: 0;
     z-index: -1;
@@ -404,67 +404,19 @@ header  {
 }
 
 @media only screen and (min-width: 280px) {
-    .hero {
-        margin-top: 2rem;
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        .text {
-            font-size: 1.4rem;
-            margin-bottom: 4rem;
-        }
-    }
     .about {
         margin-top: 8rem;
-    }
-
-    .skill {
-        margin-top: -3rem;
-    }
-
-    .portfolio {
-        margin-top: -1rem;
-    }
-
-    .hero-b {
-        height: 95vh;
     }
 }
 
 @media only screen and (min-width: 400px){
    .about {
-    margin-top: 18rem;
+    margin-top: 12rem;
    }
 
    .portfolio {
-    margin-top: 10rem;
+    margin-top: 6rem;
    }
-
-   .hero-b {
-    height: 85vh;
-   }
-
-   .hero-bg {
-    height: 70vh;
-   }
-
-   .skill .container{
-    ul li {
-        font-size: .7rem;
-    }
-   }
-
-   .hero {
-    margin-top: 4rem;
-   }
-}
-
-@media only screen and (min-width:  500px){
-    .hero {
-        margin-top: -7rem;
-    }
 }
 
 @media only screen and (min-width:  768px) {
@@ -515,6 +467,7 @@ header  {
         display: flex;
         justify-content: space-between;
         gap: 5rem;
+        margin-top: 8rem;
     }
     .about .about-cta .primary-about {
         margin-right: 5rem;
@@ -534,6 +487,10 @@ header  {
         }
     }
 
+    .portfolio .container{
+        margin-top: 12rem;
+    }
+
     .portfolio-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -546,14 +503,6 @@ header  {
             rgb(0 0 0 /73%) 0px 16px 10px -10px;
         }
         
-    }
-
-    .hero-bg {
-        height: 70vh;
-    }
-
-    .hero-b {
-        height: 100vh;
     }
 
     .contact .container{
@@ -571,7 +520,7 @@ header  {
     }
 
     .hero {
-        margin-top: 2rem;
+        margin-top: 12rem;
     }
 
     .BgColour {
@@ -581,18 +530,15 @@ header  {
     }
 }
 
-@media only screen and (min-width: 800px) {
-    .hero-b {
-        height: 70vh;
+@media only screen and (min-width:  800px) {
+    .about {
+        margin-top: 22rem;
     }
 
-    .hero-bg {
-        height: 40vh;
+    .portfolio {
+        margin-top: 8rem;
     }
 
-    .hero {
-        margin-top: 10rem;
-    }
 }
 
 @media only screen and (min-width:  1024px) {
@@ -647,7 +593,6 @@ header  {
         display: flex;
         justify-content: space-between;
         gap: 5rem;
-        margin-top: -4rem;
     }
     .about .about-cta .primary-about {
         margin-right: 5rem;
@@ -707,19 +652,15 @@ header  {
             }
         }
 
-        .hero-b {
-            height: 100vh;
-        }
-
         .skill {
         padding-left: 16rem; 
-        }
-        .hero-bg {
-            height: 70vh;
         }
 
         .section-footer .container {
             padding-left: 10rem;
+        }
+        .hero .container{
+            margin-top: 4rem;
         }
 }
 
@@ -840,9 +781,6 @@ header  {
 
     .section-footer .container {
         padding-left: 10rem;
-    }
-    .about .container {
-        margin-top: .5rem;
     }
 }
 
