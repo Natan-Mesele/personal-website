@@ -13,6 +13,7 @@ body {
   font-family: "Poppins";
   box-sizing: border-box;
   overflow-x: hidden;
+  background: #F2F2F2;
 }
 
 a {
@@ -23,23 +24,12 @@ section {
   padding: 5rem 2rem;
 }
 
-.hero-b {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url("img/hacker.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
+  background: white;
 }
 header .logo {
   position: relative;
@@ -57,7 +47,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  background: white;
+  background: #20272E;
   width: 50%;
   height: 100%;
   z-index: 999;
@@ -70,7 +60,7 @@ nav ul {
   margin-top: 4rem;
 }
 nav ul li a {
-  color: black;
+  color: white;
   font-size: 1.2rem;
   display: block;
   padding: 0.8rem 1.2rem;
@@ -118,7 +108,7 @@ nav .close {
   font-size: 2.5rem;
   line-height: 3rem;
   margin-top: 0.2rem;
-  color: white;
+  color: black;
 }
 .hero h2 {
   font-size: 1.8rem;
@@ -128,7 +118,7 @@ nav .close {
 }
 .hero .primary-cta {
   border: 5px solid var(--primary-color);
-  color: white;
+  color: black;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0.6rem 1.2rem;
@@ -143,6 +133,7 @@ nav .close {
 }
 
 .about .container {
+  background: white;
   border: 3px solid rgba(249, 249, 249, 0.1);
   box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
   padding: 1.5rem;
@@ -156,7 +147,6 @@ nav .close {
      object-fit: cover;
   border-radius: 50%;
   border: 3px solid rgba(249, 249, 249, 0.1);
-  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
   margin-bottom: 3rem;
 }
 .about .container p {
@@ -209,25 +199,32 @@ nav .close {
   margin-right: 1rem;
 }
 
-.hero-bg {
-  background: url("img/back.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 70vh;
-  position: absolute;
-  left: 0;
-  z-index: -1;
-  opacity: 0.7;
-}
-
 .skill {
   color: white;
+  background: #051129;
+}
+.skill ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0.1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 .skill ul li {
-  font-weight: bold;
-  margin: 1.5rem 2.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+.skill ul li:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://assets.codepen.io/2621168/bullet.svg");
+  background-size: contain;
+  margin-right: 0.5em;
 }
 
 .contact .container {
@@ -387,7 +384,7 @@ nav .close {
     margin: 0;
   }
   nav ul li a {
-    color: white;
+    color: black;
     font-size: 1.1rem;
     padding: 0 1.5rem;
   }
@@ -482,7 +479,7 @@ nav .close {
     margin: 0;
   }
   nav ul li a {
-    color: white;
+    color: black;
     font-size: 1.1rem;
     padding: 0 1.5rem;
   }
@@ -582,7 +579,7 @@ nav .close {
     margin: 0;
   }
   nav ul li a {
-    color: white;
+    color: black;
     font-size: 1.1rem;
     padding: 0 1.5rem;
   }

@@ -15,6 +15,7 @@ body {
     font-family: 'Poppins';
     box-sizing: border-box;
     overflow-x: hidden;
+    background:  #F2F2F2;
 }
 
 a {
@@ -25,24 +26,12 @@ section {
     padding: 5rem 2rem;
 }
 
-.hero-b {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url('img/hacker.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-
-}
-
 header  {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
+    background: white;
 
     .logo {
         position: relative;
@@ -62,7 +51,7 @@ header  {
         position: fixed;
         top: 0;
         right: 0;
-        background: white;
+        background: #20272E;
         width: 50%;
         height: 100%;
         z-index: 999;
@@ -75,7 +64,7 @@ header  {
             margin-top: 4rem;
 
             li a {
-                color: black;
+                color: white;
                 font-size: 1.2rem;
                 display: block;
                 padding: .8rem 1.2rem;
@@ -128,7 +117,7 @@ header  {
         font-size: 2.5rem;
         line-height: 3rem;
         margin-top: .2rem;
-        color: white;
+        color: black;
     }
 
     h2 {
@@ -140,7 +129,7 @@ header  {
 
     .primary-cta {
         border: 5px solid var(--primary-color);
-        color: white;
+        color: black;
         font-size: 1.2rem;
         font-weight: bold;
         padding: .6rem 1.2rem;
@@ -158,6 +147,7 @@ header  {
 
 .about {
     .container {
+        background: white;
         border: 3px solid rgba(249,249,249, 0.1);
         box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
         rgb(0 0 0 /73%) 0px 16px 10px -10px;
@@ -171,8 +161,6 @@ header  {
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid rgba(249,249,249, 0.1);
-            box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-            rgb(0 0 0 /73%) 0px 16px 10px -10px;
             margin-bottom: 3rem;
 
             }
@@ -239,25 +227,35 @@ header  {
     }
 }
 
-.hero-bg {
-    background: url("img/back.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    opacity: .7;
-}
-
 .skill {
     color: white;
+    background: #051129;
 
-    ul li {
-        font-weight: bold;
-        margin: 1.5rem 2.5rem;
-        font-size: 1.2rem;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: .1em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+
+        li {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+            margin-left: 2em;
+            position: relative;
+
+            &:before {
+                content: '';
+                left: -2em;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-image: url('https://assets.codepen.io/2621168/bullet.svg');
+                background-size: contain;
+                margin-right: .5em;
+                
+            }
+        }
     }
 }
 .contact .container {
@@ -451,7 +449,7 @@ header  {
             margin: 0;
 
             li a {
-                color: white;
+                color: black;
                 font-size: 1.1rem;
                 padding: 0 1.5rem;
                 
@@ -573,7 +571,7 @@ header  {
             margin: 0;
 
             li a {
-                color: white;
+                color: black;
                 font-size: 1.1rem;
                 padding: 0 1.5rem;
                 
@@ -700,7 +698,7 @@ header  {
             margin: 0;
 
             li a {
-                color: white;
+                color: black;
                 font-size: 1.1rem;
                 padding: 0 1.5rem;
                 
