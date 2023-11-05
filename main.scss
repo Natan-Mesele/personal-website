@@ -224,65 +224,6 @@ header  {
     margin: 1rem;
 }
 
-.section-footer {
-    background: #051129;
-    color: white;
-
-    .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-        gap: 1.5rem;
-
-        img {
-            width: 1.5rem;
-            background: white;
-            border-radius: 50%;
-        }
-
-        .left-col {
-            
-            li {
-                color: gray;
-                margin: 0 -2.5rem;
-                margin-bottom: 1rem;
-                font-size: 0.9rem;
-            }  
-        }
-
-        .mid-col {
-            ul {
-                display: flex;
-                gap: 1rem;
-                margin: 0 -2.5rem;
-            }
-        }
-        .right-col {
-            ul {
-                margin: 0 -2.5rem;
-                
-                li {
-                    padding-bottom: 1rem;
-
-                    a {
-                        color: gray;
-                    }
-                }
-            }
-        } 
-    }
-
-    ul {
-        list-style-type: none;
-    }
-    p {
-        border-top: 1px solid gray;
-        padding-top: 1rem;
-        font-size: 0.9rem;
-        color: gray;
-        text-align: center;
-    }
-}
-
 .reveal {
     position: relative;
     transform: translateY(150px);
