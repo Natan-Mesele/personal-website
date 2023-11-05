@@ -47,9 +47,9 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  background: #20272E;
-  width: 50%;
-  height: 100%;
+  background: white;
+  width: 100vw;
+  height: 100vh;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
@@ -57,14 +57,14 @@ nav {
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 4rem;
+  margin-top: 10rem;
 }
 nav ul li a {
-  color: white;
+  color: black;
   font-size: 1.2rem;
   display: block;
   padding: 0.8rem 1.2rem;
-  text-align: right;
+  text-align: center;
 }
 nav ul li a:hover {
   font-weight: bold;
@@ -95,70 +95,25 @@ nav .close {
   color: black;
 }
 
-.hero {
-  text-align: center;
-  margin-top: 4rem;
-}
-.hero .subhead {
-  color: gray;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  margin-top: 0.2rem;
-  color: black;
-}
-.hero h2 {
-  font-size: 1.8rem;
-  color: var(--primary-color);
-  font-weight: bold;
-  margin-top: -0.5rem;
-}
-.hero .primary-cta {
-  border: 5px solid var(--primary-color);
-  color: black;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5rem;
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 2rem;
-}
-.hero .primary-cta:hover {
-  background: var(--primary-color);
-  color: white;
-}
-
 .about .container {
-  background: white;
   border: 3px solid rgba(249, 249, 249, 0.1);
-  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
   padding: 1.5rem;
-}
-.about .container img {
-  position: relative;
-  left: 0;
-  width: 10rem;
-  height: 16rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid rgba(249, 249, 249, 0.1);
-  margin-bottom: 3rem;
+  text-align: center;
 }
 .about .container p {
   text-align: justify;
+  color: gray;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
 }
 .about .container p span {
   color: var(--primary-color);
   font-weight: bold;
 }
-.about .container h1 {
+.about .container h2 {
   position: relative;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 .about .container .about-cta {
   text-align: center;
@@ -180,78 +135,53 @@ nav .close {
   color: white;
 }
 
-.service {
+.portfolio {
   text-align: center;
-  background: #F1EFEF;
+  margin: 0;
 }
-.service ul {
+.portfolio .portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   list-style-type: none;
+  gap: 2rem;
 }
-.service li {
+.portfolio li {
   border: 3px solid rgba(249, 249, 249, 0.1);
   box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
   margin-bottom: 2rem;
-  padding: 2rem 1rem;
-  background: white;
 }
-.service li .service-cta a {
-  color: black;
-  margin-right: 1rem;
-}
-
-.skill {
-  color: white;
-  background: #051129;
-}
-.skill ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0.1em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-}
-.skill ul li {
-  font-size: 1.1em;
-  margin-bottom: 1em;
-  margin-left: 2em;
-  position: relative;
-}
-.skill ul li:before {
-  content: "";
-  left: -2em;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("https://assets.codepen.io/2621168/bullet.svg");
-  background-size: contain;
-  margin-right: 0.5em;
+.portfolio li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.contact .container {
-  margin-top: -7rem;
-}
 .contact .container h2 {
-  font-size: 2.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: normal;
 }
 .contact .container label {
   display: block;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 .contact .container input, .contact .container textarea {
   width: 100%;
-  padding: 0.9rem;
+  padding: 0.7rem;
   border: 1px solid gray;
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .contact .container input[type=button] {
   background: var(--primary-color);
   color: white;
   border: none;
   font-weight: bold;
-  font-size: 1.2rem;
-  padding: 0.8rem 1.4rem;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
   width: unset;
   border-radius: 5rem;
   cursor: pointer;
@@ -262,23 +192,8 @@ nav .close {
   margin-top: 4rem;
 }
 
-.portfolio h2 {
-  text-align: center;
-  font-size: 2rem;
-}
-.portfolio img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.portfolio .portfolio-list {
-  list-style-type: none;
-}
-.portfolio .portfolio-list li {
-  border: 3px solid rgba(249, 249, 249, 0.1);
-  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
-  margin-bottom: 1.5rem;
+.contact {
+  margin: 1rem;
 }
 
 .section-footer {
@@ -326,13 +241,9 @@ nav .close {
   text-align: center;
 }
 
-.contact {
-  margin: 1rem;
-}
-
 .reveal {
   position: relative;
-  transform: translateY(100px);
+  transform: translateY(150px);
   opacity: 0;
   transition: all 1s ease;
 }
@@ -340,305 +251,4 @@ nav .close {
 .reveal.active {
   transform: translateY(0px);
   opacity: 1;
-}
-
-@media only screen and (min-width: 280px) {
-  .about {
-    margin-top: 8rem;
-  }
-}
-@media only screen and (min-width: 400px) {
-  .about {
-    margin-top: 12rem;
-  }
-  .portfolio {
-    margin-top: 6rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .menu {
-    display: none;
-  }
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    z-index: 100;
-  }
-  nav {
-    transform: translateX(0);
-    position: sticky;
-    display: block;
-    width: auto;
-    height: auto;
-    background: none;
-    margin: 0 14rem 0 0;
-  }
-  nav ul .current a {
-    font-weight: bold;
-  }
-  nav ul {
-    display: flex;
-    margin: 0;
-  }
-  nav ul li a {
-    color: black;
-    font-size: 1.1rem;
-    padding: 0 1.5rem;
-  }
-  nav .close {
-    display: none;
-  }
-  .about .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 5rem;
-    margin-top: 8rem;
-  }
-  .about .about-cta .primary-about {
-    margin-right: 5rem;
-  }
-  .service-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    gap: 2rem;
-  }
-  .service li {
-    padding: 2rem 1rem;
-    width: 80%;
-    margin: 0;
-  }
-  .portfolio .container {
-    margin-top: 12rem;
-  }
-  .portfolio-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    gap: 2rem;
-    list-style-type: none;
-  }
-  .portfolio-list li {
-    border: 3px solid rgba(249, 249, 249, 0.1);
-    box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
-  }
-  .contact .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 6rem;
-  }
-  .contact .container .left-col {
-    width: 70%;
-  }
-  .contact .container iframe {
-    width: 40%;
-    height: 38rem;
-  }
-  .hero {
-    margin-top: 12rem;
-  }
-  .BgColour .logo {
-    filter: brightness(0);
-  }
-}
-@media only screen and (min-width: 800px) {
-  .about {
-    margin-top: 22rem;
-  }
-  .portfolio {
-    margin-top: 8rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .menu {
-    display: none;
-  }
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    z-index: 100;
-  }
-  nav {
-    transform: translateX(0);
-    position: sticky;
-    display: block;
-    width: auto;
-    height: auto;
-    background: none;
-    margin: 0 14rem 0 0;
-  }
-  nav ul .current a {
-    font-weight: bold;
-  }
-  nav ul {
-    display: flex;
-    margin: 0;
-  }
-  nav ul li a {
-    color: black;
-    font-size: 1.1rem;
-    padding: 0 1.5rem;
-  }
-  nav .close {
-    display: none;
-  }
-  .hero .hero-img {
-    width: 22rem;
-    height: 25rem;
-  }
-  .about .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 5rem;
-  }
-  .about .about-cta .primary-about {
-    margin-right: 5rem;
-  }
-  .skill {
-    margin-top: -2rem;
-  }
-  .skill h1 {
-    font-size: 2rem;
-  }
-  .skill p {
-    font-size: 1.2rem;
-  }
-  .skill li {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  .service-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    gap: 2rem;
-  }
-  .service li {
-    padding: 2rem 1rem;
-    width: 80%;
-    margin: 0;
-  }
-  .portfolio {
-    margin-top: 8rem;
-  }
-  .portfolio .portfolio-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    gap: 2rem;
-    list-style-type: none;
-  }
-  .portfolio .portfolio-list li {
-    border: 3px solid rgba(249, 249, 249, 0.1);
-    box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
-  }
-  .BgColour .logo {
-    filter: brightness(0);
-  }
-  .skill {
-    padding-left: 16rem;
-  }
-  .section-footer .container {
-    padding-left: 10rem;
-  }
-  .hero .container {
-    margin-top: 4rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .menu {
-    display: none;
-  }
-  section {
-    padding: 2rem 6rem;
-  }
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    z-index: 100;
-  }
-  nav {
-    transform: translateX(0);
-    position: sticky;
-    display: block;
-    width: auto;
-    height: auto;
-    background: none;
-    margin: 0 14rem 0 0;
-  }
-  nav ul .current a {
-    font-weight: bold;
-  }
-  nav ul {
-    display: flex;
-    margin: 0;
-  }
-  nav ul li a {
-    color: black;
-    font-size: 1.1rem;
-    padding: 0 1.5rem;
-  }
-  nav .close {
-    display: none;
-  }
-  .service h1 {
-    font-size: 2rem;
-  }
-  .service .title {
-    font-weight: 500;
-    color: gray;
-    letter-spacing: 0.1rem;
-    margin-bottom: 3rem;
-  }
-  .service li {
-    background: white;
-  }
-  .hero .container {
-    margin-top: 8rem;
-  }
-  .hero .container .left-col {
-    text-align: center;
-  }
-  .hero .container h1 {
-    font-size: 3rem;
-  }
-  .hero .container .text {
-    font-size: 2rem;
-  }
-  .skill .container {
-    margin: 4rem 0 0 4rem;
-  }
-  .skill .container h1 {
-    font-size: 3rem;
-  }
-  .skill .container p {
-    font-size: 1.4rem;
-  }
-  .skill .container ul li {
-    font-size: 1.4rem;
-  }
-  .contact .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 6rem;
-    margin-top: 0.5rem;
-  }
-  .contact .container .left-col {
-    width: 70%;
-  }
-  .contact .container iframe {
-    width: 40%;
-    height: 38rem;
-  }
-  .portfolio .container {
-    margin-top: 8rem;
-  }
-  .section-footer .container {
-    padding-left: 10rem;
-  }
 }/*# sourceMappingURL=main.css.map */
