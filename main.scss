@@ -153,8 +153,11 @@ header  {
 }
 
 .portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 0;
+    background: white;
 
     .portfolio-list {
         display: grid;
@@ -174,6 +177,10 @@ header  {
         box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
         rgb(0 0 0 /73%) 0px 16px 10px -10px;
         margin-bottom: 2rem;
+    }
+
+    h1 {
+        margin-bottom: 4rem;
     }
 }
 
@@ -234,6 +241,53 @@ header  {
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
+}
+
+@media only screen and (min-width: 768px){
+    .menu, .close {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0%);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+
+        ul {
+            display: flex;
+            margin: 0;
+
+            li a {
+                font-size: .9rem;
+                padding: .3rem 1.6rem;
+            }
+        }
+    }
+
+    .about .container {
+        width: 700px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: .9rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 920px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
 }
 
        

@@ -136,8 +136,11 @@ nav .close {
 }
 
 .portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 0;
+  background: white;
 }
 .portfolio .portfolio-list {
   display: grid;
@@ -155,6 +158,9 @@ nav .close {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.portfolio h1 {
+  margin-bottom: 4rem;
 }
 
 .contact .container h2 {
@@ -206,4 +212,37 @@ nav .close {
 .reveal.active {
   transform: translateY(0px);
   opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu, .close {
+    display: none;
+  }
+  nav {
+    transform: translateX(0%);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 0.3rem 1.6rem;
+  }
+  .about .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .about .container h2 {
+    font-size: 2rem;
+  }
+  .about .container p {
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
